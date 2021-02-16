@@ -1,0 +1,34 @@
+Package: Bayeshmmcts
+Title: Bayesian estimation for PHMM and ZIPHMM
+Version: 0.0.1
+Authors@R: 
+    c(person(given = "Rafael", family = "Diaz", role = c("aut", "cre"), email = "rediazb@unal.edu.co"),
+      person(given = "Wilmer", family = "Pineda", role = "aut", email = "wpinedar@unal.edu.co"),
+      person(given = "Carlos", family = "Alonso", role = "ctb", email = "cealonsom@unal.edu.co"))
+Maintainer: Rafael Diaz <rediazb@unal.eu.co>
+Description: Fast and flexible tool for Bayesian estimation of hidden Markov models using the 'rstan' package, which provides the R interface to the Stan C++ library. At the moment only the PHMM and ZIPHMM are implemented.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: 
+    Rcpp (>= 0.12.0),
+    RcppParallel (>= 5.0.1),
+    methods,
+    rstan (>= 2.18.1),
+    rstantools (>= 2.1.1),
+    expm (>= 0.999.4)
+LinkingTo: 
+    BH (>= 1.66.0),
+    Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0),
+    RcppParallel (>= 5.0.1),
+    rstan (>= 2.18.1),
+    StanHeaders (>= 2.18.0)
+SystemRequirements: GNU make
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
