@@ -14,7 +14,7 @@
 #' lambda0 = c(15, 25)
 #' A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE)
 #' pi0 = c(0.5,0.5)
-#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = T)
+#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = TRUE)
 #' print(parvect_work)
 #'
 #' @export
@@ -48,7 +48,7 @@ pois.HMM.pn2pw <- function(m, lambda, A, pi = NULL, stationary = TRUE){
 #' lambda0 = c(15, 25)
 #' A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE)
 #' pi0 = c(0.5,0.5)
-#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = T)
+#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = TRUE)
 #' pois.HMM.pw2pn(m = 2, parvect = parvect_work)
 #'
 #' @export
@@ -80,7 +80,7 @@ pois.HMM.pw2pn <- function(m, parvect, stationary = TRUE ){
 #' lambda0 = c(15, 25)
 #' A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE)
 #' pi0 = c(0.5,0.5)
-#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = T)
+#' parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = TRUE)
 #' o <- c(rpois(n = 100, lambda = 15),rpois(n = 50, lambda = 25))
 #' pois.HMM.mllk(parvect = parvect_work, o = o, m = 2, stationary = TRUE)
 #'
@@ -379,7 +379,7 @@ pois.HMM.pseudo_residuals <- function(o, mod){
 #'                             A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE),
 #'                             pi0 = c(0.5,0.5), stationary = TRUE)
 #' res <- pois.HMM.pseudo_residuals(o = o, mod = mod_2states)
-#' plot.residuals(res)
+#' pois.HMM.plot.residuals(res)
 #'
 #' @export
 pois.HMM.plot.residuals <- function(residual,...){
@@ -548,7 +548,7 @@ pois.HMM.forecast <- function(of, h=1, o, mod){
 #' mod_2states <- pois.HMM.mle(o = o, m = 2, lambda0 = c(20 ,25),
 #'                             A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE),
 #'                             pi0 = c(0.5,0.5), stationary = TRUE)
-#' stadist(mod = mod_2states)
+#' pois.HMM.stadist(mod = mod_2states)
 #'
 #' @export
 pois.HMM.stadist <- function(mod){

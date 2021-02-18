@@ -22,6 +22,6 @@ o <- c(rpois(n = 100, lambda = 15),rpois(n = 50, lambda = 25))
 mod_2states <- pois.HMM.mle(o = o, m = 2, lambda0 = c(20 ,25),
                             A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE),
                             pi0 = c(0.5,0.5), stationary = TRUE)
-stadist(mod = mod_2states)
+pois.HMM.stadist(mod = mod_2states)
 
 }

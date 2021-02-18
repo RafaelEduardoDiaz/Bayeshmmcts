@@ -27,7 +27,7 @@ m0 = 2
 lambda0 = c(15, 25)
 A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE)
 pi0 = c(0.5,0.5)
-parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = T)
+parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = TRUE)
 o <- c(rpois(n = 100, lambda = 15),rpois(n = 50, lambda = 25))
 pois.HMM.mllk(parvect = parvect_work, o = o, m = 2, stationary = TRUE)
 

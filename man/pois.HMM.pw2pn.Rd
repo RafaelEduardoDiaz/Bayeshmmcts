@@ -30,7 +30,7 @@ m0 = 2
 lambda0 = c(15, 25)
 A0 = matrix(c(0.9, 0.1, 0.1, 0.9), 2, 2, byrow = TRUE)
 pi0 = c(0.5,0.5)
-parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = T)
+parvect_work <- pois.HMM.pn2pw(m = m0, lambda = lambda0, A = A0, pi = pi0, stationary = TRUE)
 pois.HMM.pw2pn(m = 2, parvect = parvect_work)
 
 }
