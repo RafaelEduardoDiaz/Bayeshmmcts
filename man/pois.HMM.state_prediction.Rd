@@ -20,7 +20,7 @@ The state output is a matrix even if h=1.
 State prediction using a PHMM.
 }
 \details{
-Compute probabilities using equation \eqn{Pr(C_{T+h} = i | O^{(T)} = o^{(T)})}, for a range of values \eqn{h \in \mathbb{N}}.
+Compute probabilities using equation \eqn{Pr(C_{T+h} = i | O^{(T)} = o^{(T)})}, for a range of values \eqn{h \in \lbrace 1,2,... \rbrace}.
 }
 \examples{
 

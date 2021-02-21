@@ -4,9 +4,9 @@ Version: 0.0.1
 Authors@R: 
     c(person(given = "Rafael", family = "Diaz", role = c("aut", "cre"), email = "rediazb@unal.edu.co"),
       person(given = "Wilmer", family = "Pineda", role = "aut", email = "wpinedar@unal.edu.co"),
-      person(given = "Carlos", family = "Alonso", role = "ctb", email = "cealonsom@unal.edu.co"))
-Maintainer: Rafael Diaz <rediazb@unal.eu.co>
-Description: Fast and flexible tool for Bayesian estimation of hidden Markov models using the 'rstan' package, which provides the R interface to the Stan C++ library. At the moment only the PHMM and ZIPHMM are implemented.
+      person(given = "Carlos", family = "Alonso", role = "aut", email = "cealonsom@unal.edu.co"))
+Maintainer: Rafael Diaz <rediazb@unal.edu.co>
+Description: Fast and flexible tool for Bayesian estimation of hidden Markov models (PHMM and ZIPHMM) using the 'rstan' package, which provides the R interface to the Stan C++ library. At the moment only the PHMM and ZIPHMM are implemented.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

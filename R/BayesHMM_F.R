@@ -440,7 +440,7 @@ pois.HMM.state_probs <- function(o, mod, digits = 7){
 #' @param o observed series.
 #' @param mod a Poisson hidden Markov model.
 #' @return The state output is a matrix even if h=1.
-#' @details Compute probabilities using equation \eqn{Pr(C_{T+h} = i | O^{(T)} = o^{(T)})}, for a range of values \eqn{h \in \mathbb{N}}.
+#' @details Compute probabilities using equation \eqn{Pr(C_{T+h} = i | O^{(T)} = o^{(T)})}, for a range of values \eqn{h \in \lbrace 1,2,... \rbrace}.
 #' @examples
 #'
 #' set.seed(2019)
