@@ -15,7 +15,8 @@ pois.HMM.pseudo_residuals(o, mod)
 A matrix with lower, mid and upper normal pseudo-residuals.
 }
 \description{
-Find ordinary normal pseudo-residuals, using Conditional probabilities from \code{pois.HMM.conditional} function.
+Find ordinary normal pseudo-residuals, using Conditional probabilities
+from \code{pois.HMM.conditional} function.
 }
 \details{
 The form of the output is this. For each time \eqn{t} from 1 to \eqn{n}, the function provides the lower and upper normal pseudo-residuals, \eqn{z_t^{-}} and \eqn{z_t^{+}}, and the mid-pseudo-residual  \eqn{z_t^m = \Phi^{-1}((u_t^{-} + u_t^{+})/2)}.

@@ -17,5 +17,6 @@ bayes.ZIPHMM1(y, m = 2, ...)
 An object of class \code{stanfit} returned by \code{rstan::sampling}.
 }
 \description{
-Fit a Bayesian Zero inflated Poisson hidden Markov model with stan, where zero-inflation only happens in State 1.
+Fit a Bayesian Zero inflated Poisson hidden Markov model with stan,
+where zero-inflation only happens in State 1.
 }

@@ -1,3 +1,7 @@
+  <!-- badges: start -->
+  [![Travis build status](https://travis-ci.com/RafaelEduardoDiaz/Bayeshmmcts.svg?branch=master)](https://travis-ci.com/RafaelEduardoDiaz/Bayeshmmcts)
+  <!-- badges: end -->
+  
 # Bayeshmmcts <a href='https://github.com/RafaelEduardoDiaz/Bayeshmmcts/blob/master/man/figure/hmm.png'><img src='man/figure/hmm.png' align="right" height="139" /></a>
 
 ## Overview

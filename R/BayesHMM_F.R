@@ -1,6 +1,9 @@
 #' Transforming natural parameters to working
 #'
-#' The purpose of the transformation of the natural parameters (Poisson means, transition probabilities and, if appropriate, the initial distribution of the Markov chain) to working parameters is simply to convert a constrained optimization problem to an unconstrained one.
+#' The purpose of the transformation of the natural parameters (Poisson means,
+#' transition probabilities and, if appropriate, the initial distribution of the
+#' Markov chain) to working parameters is simply to convert
+#' a constrained optimization problem to an unconstrained one.
 #'
 #' @param m the number of states.
 #' @param lambda the estimates of \eqn{\lambda}.
@@ -31,7 +34,8 @@ pois.HMM.pn2pw <- function(m, lambda, A, pi = NULL, stationary = TRUE){
 
 #' Transforming working parameters to natural
 #'
-#' Transform the estimates of the working parameters to estimates of the natural parameters.
+#' Transform the estimates of the working parameters to estimates of
+#' the natural parameters.
 #'
 #' @param m the number of states.
 #' @param parvect parameters vector of working from \code{pois.HMM.pn2pw} function.
@@ -66,7 +70,8 @@ pois.HMM.pw2pn <- function(m, parvect, stationary = TRUE ){
 
 #' Computing minus the log-likelihood from the working parameters
 #'
-#' Compute minus the log-likelihood of a Poisson HMM for given values of the working parameters.
+#' Compute minus the log-likelihood of a Poisson HMM for given values of
+#' the working parameters.
 #'
 #' @param parvect parameters vector of working from \code{pois.HMM.pn2pw} function.
 #' @param o a non-negative vector with of count data time serie.
@@ -107,7 +112,8 @@ pois.HMM.mllk <- function(parvect, o, m, stationary = TRUE){
 
 #' Computing the MLEs, given starting values for the natural parameters
 #'
-#' Estimate the (natural) parameters of the model by using numerical minimization of minus the log-likelihood. For more details see the function `nlm{stats}`.
+#' Estimate the (natural) parameters of the model by using numerical minimization
+#' of minus the log-likelihood. For more details see the function `nlm{stats}`.
 #'
 #' @param o a non-negative vector with of count data time serie.
 #' @param m the number of states.
@@ -213,7 +219,8 @@ pois.HMM.viterbi <- function(o, mod){
 
 #' Computing log(forward probabilities)
 #'
-#' Given data o and model mod, this function uses the recursion \eqn{\alpha_{t+1} = \alpha_t A P(o_{t+1})} to find all the vectors of forward probabilities, in logarithmic form.
+#' Given data o and model mod, this function uses the recursion \eqn{\alpha_{t+1} = \alpha_t A P(o_{t+1})}
+#' to find all the vectors of forward probabilities, in logarithmic form.
 #'
 #' @param o observed series.
 #' @param mod a Poisson hidden Markov model.
@@ -249,7 +256,9 @@ pois.HMM.lforward <- function(o, mod){
 
 #' Computing log(backward probabilities)
 #'
-#' Similarly a log(forward probabilities), this function uses the recursion \eqn{\beta'_t = A P(o_{t+1} \beta'_{t+1})} to find all the vectors of backward probabilities, in logarithmic form.
+#' Similarly a log(forward probabilities), this function uses the recursion
+#' \eqn{\beta'_t = A P(o_{t+1} \beta'_{t+1})} to find all the vectors of
+#' backward probabilities, in logarithmic form.
 #'
 #' @param o observed series.
 #' @param mod a Poisson hidden Markov model.
@@ -284,7 +293,8 @@ pois.HMM.lbackward <- function(o, mod){
 
 #' Conditional probabilities
 #'
-#' Conditional probability that observation at time \eqn{t} equals \code{oc}, given all observations other than that at time \eqn{t}.
+#' Conditional probability that observation at time \eqn{t} equals \code{oc},
+#' given all observations other than that at time \eqn{t}.
 #'
 #' @param oc A input specifies the range of o-values for which these probabilities are required.
 #' @param o observed series.
@@ -323,7 +333,8 @@ pois.HMM.conditional <- function(oc, o, mod){
 
 #' Pseudo-residuals
 #'
-#' Find ordinary normal pseudo-residuals, using Conditional probabilities from \code{pois.HMM.conditional} function.
+#' Find ordinary normal pseudo-residuals, using Conditional probabilities
+#' from \code{pois.HMM.conditional} function.
 #'
 #' @param o observed series.
 #' @param mod a Poisson hidden Markov model.
@@ -385,7 +396,7 @@ pois.HMM.pseudo_residuals <- function(o, mod){
 pois.HMM.plot.residuals <- function(residual,...){
   par(mfrow = c(2,2), mar = c(3,3,2,2), mgp = c(2,1,0))
   # plot 1
-  plot(x = 1:length(residual$umi), y = residual$umi, pch = 22, col = "black", bg = "grey", ylim = c(-4,4), ylab = "", xlab = "")
+  plot(x = seq_along(residual$umi), y = residual$umi, pch = 22, col = "black", bg = "grey", ylim = c(-4,4), ylab = "", xlab = "")
   abline(h = 0, col = "grey", lty = 2)
   abline(h = c(-1.96,1.96), col = "grey", lty = 2)
   abline(h = c(-2.58,2.58), col = "grey", lty = 2)
@@ -394,7 +405,7 @@ pois.HMM.plot.residuals <- function(residual,...){
   qqline(residual$umi, lwd = 2, col = "grey")
   # plot 3
   x <- NULL
-  hist(residual$umi, prob = T,col = "grey", border = "white", main = "", xlab = "",...)
+  hist(residual$umi, prob = TRUE,col = "grey", border = "white", main = "", xlab = "",...)
   curve(dnorm(x, mean=mean(residual$umi), sd=sd(residual$umi)), add=TRUE, lwd = 2)
   # plot 4
   acf(residual$umi, main = "")
@@ -620,7 +631,8 @@ bayes.PHMM <- function(y, m = 2, ...){
 
 #' ZIP-HMM (Zero inflated State == 1)
 #'
-#' Fit a Bayesian Zero inflated Poisson hidden Markov model with stan, where zero-inflation only happens in State 1.
+#' Fit a Bayesian Zero inflated Poisson hidden Markov model with stan,
+#' where zero-inflation only happens in State 1.
 #'
 #' @param y observed series.
 #' @param m the number of states.

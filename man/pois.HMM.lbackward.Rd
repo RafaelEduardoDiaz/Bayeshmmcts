@@ -15,7 +15,9 @@ pois.HMM.lbackward(o, mod)
 A matrix (lalpha) is returned.
 }
 \description{
-Similarly a log(forward probabilities), this function uses the recursion \eqn{\beta'_t = A P(o_{t+1} \beta'_{t+1})} to find all the vectors of backward probabilities, in logarithmic form.
+Similarly a log(forward probabilities), this function uses the recursion
+\eqn{\beta'_t = A P(o_{t+1} \beta'_{t+1})} to find all the vectors of
+backward probabilities, in logarithmic form.
 }
 \examples{
 

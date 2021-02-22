@@ -1,7 +1,7 @@
 #' Bayeshmmcts: Fit hidden Markov Models via RStan.
 #'
-#' @description Fast and flexible tool for Bayesian estimation of hidden Markov models using the 'rstan' package, which provides the R interface to the Stan C++ library.
-#'
+#' @description Fast and flexible tool for Bayesian estimation of hidden Markov models using the 'rstan' package,
+#'              which provides the R interface to the Stan C++ library. At the moment only the PHMM and ZIPHMM are implemented.
 #' @docType package
 #' @name Bayeshmmcts-package
 #' @aliases Bayeshmmcts

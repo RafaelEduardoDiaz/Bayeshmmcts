@@ -21,7 +21,10 @@ pois.HMM.pn2pw(m, lambda, A, pi = NULL, stationary = TRUE)
 parvect parameters vector of working.
 }
 \description{
-The purpose of the transformation of the natural parameters (Poisson means, transition probabilities and, if appropriate, the initial distribution of the Markov chain) to working parameters is simply to convert a constrained optimization problem to an unconstrained one.
+The purpose of the transformation of the natural parameters (Poisson means,
+transition probabilities and, if appropriate, the initial distribution of the
+Markov chain) to working parameters is simply to convert
+a constrained optimization problem to an unconstrained one.
 }
 \examples{
 

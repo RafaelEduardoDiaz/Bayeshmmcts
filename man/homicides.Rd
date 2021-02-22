@@ -18,9 +18,9 @@ A data frame with 50 observations and 4 variables:
 homicides
 }
 \description{
-This data contains the total number of homicides and the intentional homicide rate in Colombia
-for the years 1960 to 2018.
-The data were drawn from the National Planning Department (DNP) and the delective statistics
-of the National Police.
+This data contains the total number of homicides and the intentional homicide
+rate in Colombia for the years 1960 to 2018.
+The data were drawn from the National Planning Department (DNP) and the
+criminal statistics of the National Police.
 }
 \keyword{datasets}

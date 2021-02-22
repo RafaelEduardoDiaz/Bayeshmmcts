@@ -35,7 +35,8 @@ A list of parameters
 }
 }
 \description{
-Estimate the (natural) parameters of the model by using numerical minimization of minus the log-likelihood. For more details see the function `nlm{stats}`.
+Estimate the (natural) parameters of the model by using numerical minimization
+of minus the log-likelihood. For more details see the function `nlm{stats}`.
 }
 \examples{
 

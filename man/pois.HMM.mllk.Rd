@@ -19,7 +19,8 @@ pois.HMM.mllk(parvect, o, m, stationary = TRUE)
 mllk Minus the log-likelihood.
 }
 \description{
-Compute minus the log-likelihood of a Poisson HMM for given values of the working parameters.
+Compute minus the log-likelihood of a Poisson HMM for given values of
+the working parameters.
 }
 \examples{
 

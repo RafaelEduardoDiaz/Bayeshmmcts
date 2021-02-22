@@ -22,7 +22,8 @@ A list of parameters
 }
 }
 \description{
-Transform the estimates of the working parameters to estimates of the natural parameters.
+Transform the estimates of the working parameters to estimates of
+the natural parameters.
 }
 \examples{
 

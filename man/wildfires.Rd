@@ -17,7 +17,8 @@ wildfires
 }
 \description{
 These data describe the number of large forest fires that occurred in Colombia,
-from January 2002 to December 2016. The data was extracted from the Institute of Hydrology,
-Meteorology and Environmental Studies (IDEAM), and the periodicity of the data is monthly.
+from January 2002 to December 2016. The data was extracted from the Institute
+of Hydrology, Meteorology and Environmental Studies (IDEAM), and the periodicity
+of the data is monthly.
 }
 \keyword{datasets}

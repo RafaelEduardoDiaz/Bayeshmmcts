@@ -17,7 +17,8 @@ pois.HMM.conditional(oc, o, mod)
 the result is a matrix with conditional probabilities.
 }
 \description{
-Conditional probability that observation at time \eqn{t} equals \code{oc}, given all observations other than that at time \eqn{t}.
+Conditional probability that observation at time \eqn{t} equals \code{oc},
+given all observations other than that at time \eqn{t}.
 }
 \examples{
 

@@ -15,7 +15,8 @@ pois.HMM.lforward(o, mod)
 A matrix (lalpha) is returned.
 }
 \description{
-Given data o and model mod, this function uses the recursion \eqn{\alpha_{t+1} = \alpha_t A P(o_{t+1})} to find all the vectors of forward probabilities, in logarithmic form.
+Given data o and model mod, this function uses the recursion \eqn{\alpha_{t+1} = \alpha_t A P(o_{t+1})}
+to find all the vectors of forward probabilities, in logarithmic form.
 }
 \examples{
 
