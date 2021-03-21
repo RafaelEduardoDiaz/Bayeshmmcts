@@ -4,3 +4,6 @@
 ^data-raw$
 ^\.travis\.yml$
 ^cran-comments\.md$
+^codecov\.yml$
+^\.github$
+^CRAN-RELEASE$

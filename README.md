@@ -1,7 +1,15 @@
   <!-- badges: start -->
+  [![Codecov test coverage](https://codecov.io/gh/RafaelEduardoDiaz/Bayeshmmcts/branch/master/graph/badge.svg)](https://codecov.io/gh/RafaelEduardoDiaz/Bayeshmmcts?branch=master)
+  <!-- badges: end -->
+
+ <!-- badges: start -->
   [![Travis build status](https://travis-ci.com/RafaelEduardoDiaz/Bayeshmmcts.svg?branch=master)](https://travis-ci.com/RafaelEduardoDiaz/Bayeshmmcts)
   <!-- badges: end -->
-  
+
+  <!-- badges: start -->
+  [![R-CMD-check](https://github.com/RafaelEduardoDiaz/Bayeshmmcts/workflows/R-CMD-check/badge.svg)](https://github.com/RafaelEduardoDiaz/Bayeshmmcts/actions)
+  <!-- badges: end -->
+
 # Bayeshmmcts <a href='https://github.com/RafaelEduardoDiaz/Bayeshmmcts/blob/master/man/figure/hmm.png'><img src='man/figure/hmm.png' align="right" height="139" /></a>
 
 ## Overview
