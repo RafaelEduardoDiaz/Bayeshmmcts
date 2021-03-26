@@ -21,9 +21,10 @@ Fit a Bayesian Poisson hidden Markov model with stan.
 }
 \examples{
 
-set.seed(2019)
-y <- c(rpois(n = 100, lambda = 15),rpois(n = 50, lambda = 25),rpois(n = 75, lambda = 32))
-PHHMM_3states <- bayes.PHMM(y = y, m = 3, chains = 2, iter = 1000)
-print(PHHMM_3states, digits_summary = 3)
+data("homicides") # load data
+Homicides <- ts(data = round(homicides$Rate), start = 1960) # convert to time series
+
+BayesPHHMM_2states <- bayes.PHMM(y = Homicides, m = 2, chains = 1, iter = 500,
+                                control = list(adapt_delta = 0.99), seed = 4)
 
 }

@@ -48,6 +48,7 @@ after_script:
 
 r_packages:
   - covr
+  - devtools
 
 after_success:
   - travis_wait 40 tar -C .. -xf $PKG_TARBALL
@@ -58,3 +59,18 @@ on_success:
 
 after_failure:
 - cat Bayeshmmcts.Rcheck/00*
+
+comment: false
+
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+        informational: true
+    patch:
+      default:
+        target: auto
+        threshold: 1%
+        informational: true
